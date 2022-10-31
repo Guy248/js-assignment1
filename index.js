@@ -40,7 +40,7 @@ class Ingredient {
     this.id = numid++;
     this.name = name;
     this.image = image;
-    this.calories = calories;
+    this.calories = Number(calories);
   }
   //render all ingredients
   renderIng(str, Arr) {
@@ -193,7 +193,7 @@ class DishRecipe {
   
            <p>Cooking method: ${DishRecipeJson[i].cookingMethod}</p>
            
-           <p>Total cooking time: ${DishRecipeJson[i].time}</p>
+           <p>Total cooking time: ${DishRecipeJson[i].time} minutes</p>
            <p>total calories: ${DishRecipeJson[i].getTotalCalories()}</p>
           <button onclick="openModal(${i})">show Ingredients</button>
            <div id="myModal${i}" class="modal">

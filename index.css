@@ -4,7 +4,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: antiquewhite;
+  background-color: #becbce;
 }
 header > div > button {
   border-radius: 50%;
@@ -14,18 +14,25 @@ header > div > button {
 }
 header > div > button:hover {
   transform: rotate(360deg);
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 
 .dishes {
-  border: 1px solid black;
   padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+  min-width: 95px;
+}
+.col,
+.col-6 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .img-fluid {
   aspect-ratio: 14/9;
+  max-width: 440px;
 }
+
 .hidden {
   display: none;
 }
@@ -37,6 +44,19 @@ label {
 button {
   margin: 3%;
   cursor: pointer;
+  background-color: #cedbde;
+  border-style: groove;
+}
+
+button:hover {
+  opacity: 80%;
+  background-color: black;
+  color: white;
+  transition-duration: 1s;
+}
+
+input {
+  accent-color: red;
 }
 .modal {
   display: none; /* Hidden by default */

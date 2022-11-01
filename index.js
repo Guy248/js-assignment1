@@ -45,7 +45,7 @@ class Ingredient {
   //render all ingredients
   renderIng(str, Arr) {
     for (let i = 0; i < Arr.length; i++) {
-      str += `<div class="col-4">
+      str += `<div class="col-6">
          <div  class="check">
          <label>add</label>
          <input type="checkbox" id="food${i}"/></div>
@@ -162,6 +162,7 @@ function createIngredient() {
   document.querySelector("#ingredientName").value = "";
   document.querySelector("#ingredientImage").value = "";
   document.querySelector("#ingredientCalories").value = "";
+  alert("An ingredient was succsesfully added");
 }
 
 class DishRecipe {
@@ -208,10 +209,6 @@ class DishRecipe {
 
     return str;
   }
-
-  //gets all the ingredient of a specific dish
-  //not doing anything yet
-  getIngredients() {}
 }
 //manages create recipe BTN
 function createRecipe() {
@@ -238,6 +235,7 @@ function createRecipe() {
   document.querySelector("#cookingTime").value = "";
   document.querySelector("#cookingMethod").value = "";
   document.querySelector("#recipeImage").value = "";
+  alert("A new recipe was succsesfully added");
 }
 
 //close button

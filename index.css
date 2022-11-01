@@ -56,6 +56,10 @@ button:hover {
   transition-duration: 1s;
 }
 
+button:focus {
+  color: inherit;
+}
+
 input {
   accent-color: red;
 }

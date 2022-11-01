@@ -22,6 +22,7 @@ header > div > button:hover {
   margin-bottom: 1rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
   min-width: 95px;
+  max-width: 550px;
 }
 .col,
 .col-6 {
@@ -30,7 +31,7 @@ header > div > button:hover {
 }
 .img-fluid {
   aspect-ratio: 14/9;
-  max-width: 440px;
+  max-width: 100%;
 }
 
 .hidden {
